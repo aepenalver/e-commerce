@@ -1,0 +1,167 @@
+.audiowide {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(228, 228, 228);
+    font-family: "Roboto", sans-serif;
+}
+
+.store {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-areas:
+        "navbar navbar"
+        "menu main"
+        "footer footer";
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span {
+    color: rgb(185, 2, 2);
+    font-size: 50px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-links a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-links a:hover {
+    color: rgb(185, 2, 2);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    grid-area: menu;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h3 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.menu-items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+}
+
+.item-category {
+    display: flex;
+    margin: 5px;
+}
+
+.item-category a:hover {
+    color: rgb(185, 2, 2);
+}
+
+.item-category a {
+    font-size: 20px;
+}
+
+.item-category p {
+    margin: 0;
+    padding-left: 5px;
+    color: grey;
+    font-size: 20px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 100%;
+    overflow: auto;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.image {
+    height: 300px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    margin: 0;
+}
+
+.price {
+    font-weight: bolder;
+}
+
+.card button {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    padding: 20px;
+    background-color: rgb(48, 46, 46);
+    color: red;
+    font-size: 20px;
+}
+
+.card button:hover {
+    background-color: rgb(134, 1, 1);
+    color: rgb(205, 205, 1);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span {
+    color: rgb(185, 2, 2);
+}
